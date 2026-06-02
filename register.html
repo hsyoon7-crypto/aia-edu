@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>프라이빗 컨설팅 신청 - AIA WM</title>
+    <style>
+        :root {
+            --primary-gold: #c5a880;
+            --dark-brown: #231f20;
+            --deep-bronze: #3d3536;
+            --text-light: #eaeaea;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Noto Sans KR', sans-serif; }
+        body { background-color: var(--dark-brown); color: var(--text-light); line-height: 1.6; }
+        
+        nav { display: flex; justify-content: space-between; align-items: center; padding: 25px 50px; background: rgba(35, 31, 32, 0.95); position: fixed; width: 100%; top: 0; z-index: 1000; border-bottom: 1px solid rgba(197, 168, 128, 0.2); }
+        .logo { font-size: 1.2rem; font-weight: 700; letter-spacing: 2px; color: #fff; }
+        .logo span { color: var(--primary-gold); }
+        .nav-links a { color: var(--text-light); text-decoration: none; margin-left: 30px; font-size: 0.95rem; }
+        .nav-links a:hover, .nav-links a.active { color: var(--primary-gold); }
+
+        .header-space { margin-top: 120px; }
+        
+        /* CSS 수정 */
+		.form-container { 
+			max-width: 800px; /* 폼을 조금 더 넓게 */
+			margin: 0 auto 80px auto; 
+			background: transparent; /* 배경색 제거 */
+			padding: 20px; 
+			border: none; /* 테두리 제거 */
+		}
+		.iframe {
+			filter: invert(90%) hue-rotate(180deg) brightness(95%);
+			border-radius: 4px;
+		}
+        .form-header h2 { font-size: 2rem; color: #fff; margin-bottom: 20px; }
+        .form-header h2 span { color: var(--primary-gold); }
+        .form-header p { color: #ccc; margin-bottom: 40px; }
+
+        .btn-action { display: inline-block; width: 100%; padding: 20px; background: linear-gradient(135deg, #c5a880, #a3855c); color: var(--dark-brown); border: none; font-size: 1.1rem; font-weight: 700; text-decoration: none; cursor: pointer; transition: 0.3s; }
+        .btn-action:hover { transform: translateY(-2px); background: #d6b991; }
+        
+        .notice { margin-top: 30px; font-size: 0.85rem; color: #888; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">AIA GLOBAL WEALTH <span>SOLUTION</span></div>
+        <div class="nav-links">
+            <a href="index.html">설명회 메인</a>
+            <a href="wmcenter.html">WM센터 소개</a>
+            <a href="register.html" class="active">컨설팅 신청</a>
+        </div>
+    </nav>
+
+    <div class="header-space"></div>
+
+    <div class="form-container">
+		<div class="form-header">
+			<h2>Private <span>Consulting</span></h2>
+			<p>본 상담은 강남 WM센터 전문가 그룹의<br>1:1 프라이빗 VIP 상담으로 진행됩니다.</p>
+		</div>
+
+		<!-- 폼을 심는 대신 버튼으로 강조 -->
+		<a href="https://docs.google.com/forms/d/e/1FAIpQLScjrEbag4t8frc2xG-_9FQTZ83P4hvkxQbg5dw2dfQ3Eky3Fg/viewform" 
+		   target="_blank" class="btn-action">
+		   상담 신청서 작성하기
+		</a>
+
+		<div class="notice">
+			<p>※ 작성하신 신청서는 WM센터 전담 매니저에게 실시간으로 전달됩니다.</p>
+		</div>
+    </div>
+
+    <footer>
+        <p>© 2026 AIA GLOBAL WEALTH SOLUTION.</p>
+    </footer>
+
+</body>
+</html>
