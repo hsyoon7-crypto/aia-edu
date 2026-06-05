@@ -37,6 +37,30 @@
 
         /* Container */
         .container { max-width: 1100px; margin: 0 auto; padding: 30px 20px; }
+        
+        /* 메인 동영상 영역 스타일 수정 (PC에서 너무 거대해지지 않도록 조절) */
+        .main-video-wrapper {
+            max-width: 800px;
+            margin: 0 auto 40px auto; /* 아래 컨텐츠와 40px 간격 격리 */
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 비율 */
+            height: 0;
+            overflow: hidden;
+            border: 1px solid rgba(197, 168, 128, 0.4);
+            border-radius: 4px;
+            background: #000;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
         .grid-2 { display: grid; grid-template-columns: 1fr; gap: 30px; align-items: start; }
         
         .left-column { display: flex; flex-direction: column; gap: 20px; }
@@ -94,6 +118,12 @@
     </section>
 
     <div class="container">
+        <div class="main-video-wrapper">
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/frpPU_NXWuY" title="AIA WM Center Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </div>
+
         <div class="grid-2">
             <div class="left-column">
                 <div class="profile-card">
@@ -113,7 +143,7 @@
                 <div class="seminar-info">
                     <div class="info-box-item"><h5>일 시</h5><p>6월 13일 토요일 오후 2시</p></div>
                     <div class="info-box-item"><h5>장 소</h5><p>강남구 도산대로 318 SB타워 12층 대강의실</p></div>
-					<div class="info-box-item"><h5>문 의</h5><p>010-8159-8419</p></div>
+                    <div class="info-box-item"><h5>문 의</h5><p>010-8159-8419</p></div>
                     <div class="info-box-item"><h5>참석 대상</h5><p>초·중·고 학부모 및 교육 전문 컨설팅 희망 고객</p></div>
                 </div>
             </div>
